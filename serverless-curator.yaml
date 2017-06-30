@@ -1,0 +1,8 @@
+# Define Elasticsearch Clusters and indices here, to have them periodically
+# pruned by Curator.
+- name: example logging cluster
+  endpoint: https://LOGCLUSTER.eu-west-1.es.amazonaws.com
+  region: eu-west-1
+  indices:
+    - prefix: logstash-
+      days: 30
