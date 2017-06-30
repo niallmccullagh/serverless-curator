@@ -20,12 +20,19 @@ scripts into a distribution.
 ## Deploying
 
 1. Ensure that you are logged into AWS cli
-1. Create a role by following the steps (http://docs.aws.amazon.com/lambda/latest/dg/with-s3-example-create-iam-role.html)[http://docs.aws.amazon.com/lambda/latest/dg/with-s3-example-create-iam-role.html]
+1. Create a role by following the steps in [Create IAM role for lambda](http://docs.aws.amazon.com/lambda/latest/dg/with-s3-example-create-iam-role.html)
 1. Note the ARN of the new role as it is used below
 1. Run the deploy the script ```
 export FUNCTION_ROLE=XXXX; ./deploy.sh
-```
+
+
 ## AWS Elasticsearch Service Access Policy
 
 Depending on your setup you will need to add permissions for the lambda function role to
 query/delete Elasticsearch indices. See AWS Elasticsearch documentation for more information.
+
+
+
+### Thanks
+
+Thanks to Cristian Uroz who wrote the original [gist](https://gist.github.com/cjuroz/d45f4d73e74f068892c5e4f3d1c7fa7c)
