@@ -22,9 +22,10 @@ scripts into a distribution.
 1. Ensure that you are logged into AWS cli
 1. Create a role by following the steps in [Create IAM role for lambda](http://docs.aws.amazon.com/lambda/latest/dg/with-s3-example-create-iam-role.html)
 1. Note the ARN of the new role as it is used below
-1. Run the deploy the script ```
+1. Run the deploy the script 
+```bash
 export FUNCTION_ROLE=XXXX; ./deploy.sh
-
+```
 
 ## AWS Elasticsearch Service Access Policy
 
